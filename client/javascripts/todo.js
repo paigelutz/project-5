@@ -85,8 +85,16 @@ let getToDo = () => {
 };
 
 let deleteAll = () => {
-  //delete all comments from db
-  localStorage.removeItem("commentsList");
+  //delete all todos from db
+  let content = $("#deleteMany").val();
+  $.ajax({
+      method: "POST",
+      url: "http://localhost:8888/deletetodos/"
+    })
+    .done(function(msg) {
+      console.log("ToDo List Deleted");
+    });
+
   window.location.reload();
 };
 
