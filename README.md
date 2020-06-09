@@ -40,7 +40,6 @@ JavaScript
 * Some web APIs are public, and others require an access key. Flickr offers several public APIs
 * In this project, you will use Flickr's public API
 
-
 ## 281 Project 1 Learning Outcomes
 ### Learning Outcomes
 * Basic Unix Shell commands
